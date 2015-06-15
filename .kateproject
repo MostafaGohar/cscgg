@@ -1,0 +1,6 @@
+ 
+{
+  "name": "company"
+, "files": [ { "directory": "." , "recursive": 1 } ]
+} 
+ 

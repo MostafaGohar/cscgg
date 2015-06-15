@@ -1,0 +1,155 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+  //background: url('coffee1.jpg');
+  margin-top:250px;
+}
+#header{
+width:100%;
+height:60px;
+margin-top:160px;
+//#19673F
+//#716B1D
+//#B52A27
+top:0;
+left:0;
+right:0;
+background-color: #040100;
+position:absolute;
+}
+
+#header ul{
+  list-style:none;
+  position:absolute;
+  white-space: nowrap;
+  text-align:center;
+  padding:0;
+  margin:0;
+}
+#header li{
+  //box-shadow: 1px 1px 0px #888888;
+  width:150px;
+  display:inline-block;
+  line-height:60px;
+  //text-align:center;
+  background-color:#040100;//#19673F;
+&:hover a{
+        background-color:#19673F;
+        height:57px;
+        border-bottom:3px solid #B52A27;
+}
+&:hover ul li a{
+        background-color:#040100;
+        height:60px;
+        border-bottom:none;
+}
+
+}
+#header li a{
+  font-family: 'Santana-Black';
+  font-size:18px;
+  width:150px;
+  height:60px;
+  text-decoration: none;
+  color:white;
+  display: block;
+  //transition: .3s;
+
+
+
+}
+li ul{
+  display:none;
+}
+#header li ul li{
+  width:auto;
+  display:block;
+}
+#header li ul li a{
+  width:425px;
+    &:hover{
+    background-color:#19673F;
+    height:60px;
+    border-bottom:none;
+    //color:#D5B77C;
+  }
+}
+
+#header li:hover ul{
+  display:block;
+}
+
+#headerList{
+  position:absolute;
+  margin-left:23%;
+}
+#headerRight{
+  //margin-right:500px;
+  //margin-left:0;
+  //position:absolute;
+ // width:170px;
+  //height:60px;
+}
+
+
+
+#siteIcon{
+  float:left;
+  width:100px;
+  height:100px;
+  background:transparent;
+  background-image: url('company_logo_icon.gif');
+  background-size: 100px 111px;
+  margin-top:-22px;
+  margin-left:-120px;
+  outline:none;
+}
+
+#siteWrapper{
+  overflow:hidden;
+  background-color:white;
+  margin: 0 auto;
+  width:1000px;
+  height:500px;
+  border:2px solid #fff;
+}
+
+/*.listItem{
+  margin-top:-13px;
+  background-color:#040100;//#19673F;
+  height:59px;
+  width:85px;
+  border:none;
+  outline:none;
+  color:white;
+  font-size:20px;
+  //transition: .3s;
+  &:hover{
+    background-color:#19673F;
+  }
+}*/
+button::-moz-focus-inner {
+  border: 0;
+}
+
+svg{
+  margin-bottom:-3px;
+  margin-right:5px;
+}
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coffeeshop Company Gohar Group</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="shortcut icon" href="http://i.imgur.com/2utFytU.gif">
+    <link rel="stylesheet" href="http://i.icomoon.io/public/temp/01ceb62965/UntitledProject/style-svg.css">
+    <script src="http://i.icomoon.io/public/temp/01ceb62965/UntitledProject/svgembedder.js"></script>
+</head>
+
+<!-- header -->
+  <div id ="header">
+    <div id ="headerList">
+      <div id="siteIcon"></div>
+      <ul>
+      <li>
+		  <a href="#"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg> BRANCHES</a>
+		<ul>
+		  <li><a href="#">DOWNTOWN</a></li>
+		  <li><a href="#">MAADI</a></li>
+		</ul>
+      </li>
+      <li>
+		<a href="#"><svg class="icon icon-spoon-knife"><use xlink:href="#icon-spoon-knife"></use></svg> MENU</a>
+		<ul>
+		  <li><a href="#">FOOD</a></li>
+		  <li><a href="#"><svg class="icon icon-mug"><use xlink:href="#icon-mug"></use></svg> DRINK</a></li>
+		</ul>
+      </li>
+      <li>
+		<a href="#"><svg class="icon icon-user-tie"><use xlink:href="#icon-user-tie"></use></svg> BUSINESS</a>
+		<ul>
+		  <li><a href="#">JOB OPPORTUNITIES</a></li>
+		  <li><a href="#">LOREM IPSUM</a></li>
+		</ul>
+      </li>
+      <li>
+		<a href="#"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg> CONTACT US</a>
+      </li>
+      <li>
+      </li>
+      <li><a data-no-turbolink='true' href="/users/new"><svg class="icon icon-enter"><use xlink:href="#icon-enter"></use></svg> LOGIN</a></li>
+      <li><a data-no-turbolink='true' href="/users/new"><svg class="icon icon-user-plus"><use xlink:href="#icon-user-plus"></use></svg> SIGNUP</a></li>
+      </ul>
+      </ul>
+    </div>
+  </div>
+<!-- /header -->
+
+<body>
+<div id="siteWrapper">
+<%= yield %>
+</div>
+</body>
+
+</html>
